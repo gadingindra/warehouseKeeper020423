@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- Bootsrap 4.0 -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <title>Warehouse - TIO</title>
+    <link rel="icon" href="../assets/img/favicon.ico">
+
+    <!-- STYLE FILES -->
+    <link rel="stylesheet" href="../assets/css/home.css">
+    
+</head>
+<body>
+
+    <!-- --------------- Navbar ---------------  -->
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="">
+                    <span class="icon">
+                        <ion-icon name="logo-google"></ion-icon>
+                    </span>
+                    <span class="title">Warehouse - TIO</span>
+                </a>
+            </li>
+            <li>
+                <a href="home.html">
+                    <span class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="title">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="master-data.html">
+                    <span class="icon">
+                        <ion-icon name="analytics-outline"></ion-icon>
+                    </span>
+                    <span class="title">Master Data</span>
+                </a>
+            </li>
+            <li>
+                <a href="master-produk.html">
+                    <span class="icon">
+                        <ion-icon name="server-outline"></ion-icon>
+                    </span>
+                    <span class="title">Master Product</span>
+                </a>
+            </li>
+            <li>
+                <a href="reciving.html">
+                    <span class="icon">
+                        <ion-icon name="walk-outline"></ion-icon>
+                    </span>
+                    <span class="title">Receiving</span>
+                </a>
+            </li>
+            <li> 
+                <a href="movement.html">
+                    <span class="icon">
+                        <ion-icon name="swap-horizontal-outline"></ion-icon>
+                    </span>
+                    <span class="title">Movement</span>
+                </a>
+            </li>
+            <li> 
+                <a href="racking.html">
+                    <span class="icon">
+                        <ion-icon name="warning-outline"></ion-icon>
+                    </span>
+                    <span class="title">Racking</span>
+                </a>
+            </li>
+            <li> 
+                <a href="payment.html">
+                    <span class="icon">
+                        <ion-icon name="cash-outline"></ion-icon>
+                    </span>
+                    <span class="title">Payment</span>
+                </a>
+            </li>
+            <li> 
+                <a href="../index.html">
+                    <span class="icon">
+                        <ion-icon name="log-out-outline"></ion-icon>
+                    </span>
+                    <span class="title">Sign out</span>
+                </a>
+            </li>
+        </ul>
+    </div> 
+
+<!-- ------------- MAIN ------------- -->
+
+<div class="main">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="topbar">
+        <div class="toggle">
+            <ion-icon name="menu-outline"></ion-icon>
+        </div>
+        
+        <div class="container-fluid">
+            <label style="margin-left: 620px; margin-top: 20px; font-family: geneva;">alfirassmanar11@gmail.company.co.id</label>
+            <p style="margin-left: 767px; margin-top: -12px; font-size: 10pt;">Daily Worker-TIO</p>
+         </div>
+
+        <div class="dropdown">
+            <div class="user dropdown-toggle" id="dropdownimg" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="../assets/img/firas.jpg" alt="">
+            </div>
+            <div class="dropdown-menu bg-transparent" aria-labelledby="dropdownimg" style="margin-left: -146px; margin-top: 9px; transition: 0.5s; overflow: hidden;">
+              <a class="dropdown-item" href="#">Profile</a>
+              <a class="dropdown-item" href="../index.html">Logout</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- ------------- Body Bootstrap ------------- -->
+
+<nav class="navbar" style="background-color: #FFFCFC; height: 1000px; box-shadow: 2px 2px 2px rgba(0,0,0,0.2);">
+    <div class="container" style="margin-top: -350px;">
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <!-- Dropdown -->
+            <div class="form-group" style="width: 240px;">
+                <label for="exampleFormControlSelect1" style="font-family: Geneva;">Layout Warehouse</label>
+                <p style="margin-top: -13px;"><div class="btn btn-sm btn-outline-success" type="button" data-toggle="modal" data-target="#select-racking" >Select</div></p>
+              </div>
+              <!-- End Dropdown -->
+              <hr>
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col" style="color: gray;">Kategori*</th>
+                    <!-- <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th> -->
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">WH 1</th>
+                    <td><div class="btn btn-sm btn-success"><input type="checkbox"> wh1001</div></td>
+                    <td><div class="btn btn-sm btn-success"><input type="checkbox"> wh1002</div></td>
+                    <td><div class="btn btn-sm btn-danger"><input type="checkbox"> wh1003</div></td>
+                    <td><div class="btn btn-sm btn-success"><input type="checkbox"> wh1004</div></td>
+                    <td><div class="btn btn-sm btn-danger"><input type="checkbox"> wh1005</div></td>
+                    <td><div class="btn btn-sm btn-success"><input type="checkbox"> wh1006</div></td>
+                    <td><div class="btn btn-sm btn-danger"><input type="checkbox"> wh1007</div></td>
+                    <td><div class="btn btn-sm btn-success"><input type="checkbox"> wh1008</div></td>
+                    <td><div class="btn btn-sm btn-success"><input type="checkbox"> wh1009</div></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">WH 2</th>
+                    <td><div class="btn btn-sm btn-success"><input type="checkbox"> wh2001</div></td>
+                    <td><div class="btn btn-sm btn-success"><input type="checkbox"> wh2002</div></td>
+                    <td><div class="btn btn-sm btn-danger"><input type="checkbox"> wh2003</div></td>
+                    <td><div class="btn btn-sm btn-success"><input type="checkbox"> wh2004</div></td>
+                    <td><div class="btn btn-sm btn-success"><input type="checkbox"> wh2005</div></td>
+                    <td><div class="btn btn-sm btn-warning"><input type="checkbox"> wh2006</div></td>
+                    <td><div class="btn btn-sm btn-success"><input type="checkbox"> wh2007</div></td>
+                    <td><div class="btn btn-sm btn-success"><input type="checkbox"> wh2008</div></td>
+                    <td><div class="btn btn-sm btn-danger"><input type="checkbox"> wh2009</div></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">WH 3</th>
+                    <td><div class="btn btn-sm btn-warning"><input type="checkbox"> wh3001</div></td>
+                    <td><div class="btn btn-sm btn-success"><input type="checkbox"> wh3002</div></td>
+                    <td><div class="btn btn-sm btn-danger"><input type="checkbox"> wh3003</div></td>
+                    <td><div class="btn btn-sm btn-success"><input type="checkbox"> wh3004</div></td>
+                    <td><div class="btn btn-sm btn-danger"><input type="checkbox"> wh3005</div></td>
+                    <td><div class="btn btn-sm btn-success"><input type="checkbox"> wh3006</div></td>
+                    <td><div class="btn btn-sm btn-danger"><input type="checkbox"> wh3007</div></td>
+                    <td><div class="btn btn-sm btn-success"><input type="checkbox"> wh3008</div></td>
+                    <td><div class="btn btn-sm btn-warning"><input type="checkbox"> wh3009</div></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">WH 4</th>
+                    <td><div class="btn btn-sm btn-danger"><input type="checkbox"> wh4001</div></td>
+                    <td><div class="btn btn-sm btn-danger"><input type="checkbox"> wh4002</div></td>
+                    <td><div class="btn btn-sm btn-danger"><input type="checkbox"> wh4003</div></td>
+                    <td><div class="btn btn-sm btn-danger"><input type="checkbox"> wh4004</div></td>
+                    <td><div class="btn btn-sm btn-danger"><input type="checkbox"> wh4005</div></td>
+                    <td><div class="btn btn-sm btn-danger"><input type="checkbox"> wh4006</div></td>
+                    <td><div class="btn btn-sm btn-success"><input type="checkbox"> wh4007</div></td>
+                    <td><div class="btn btn-sm btn-success"><input type="checkbox"> wh4008</div></td>
+                    <td><div class="btn btn-sm btn-warning"><input type="checkbox"> wh4009</div></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">WH 5</th>
+                    <td><div class="btn btn-sm btn-success"><input type="checkbox"> wh5001</div></td>
+                    <td><div class="btn btn-sm btn-warning"><input type="checkbox"> wh5002</div></td>
+                    <td><div class="btn btn-sm btn-success"><input type="checkbox"> wh5003</div></td>
+                    <td><div class="btn btn-sm btn-warning"><input type="checkbox"> wh5004</div></td>
+                    <td><div class="btn btn-sm btn-warning"><input type="checkbox"> wh5005</div></td>
+                    <td><div class="btn btn-sm btn-warning"><input type="checkbox"> wh5006</div></td>
+                    <td><div class="btn btn-sm btn-success"><input type="checkbox"> wh5007</div></td>
+                    <td><div class="btn btn-sm btn-success"><input type="checkbox"> wh5008</div></td>
+                    <td><div class="btn btn-sm btn-danger"><input type="checkbox"> wh5009</div></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">WH 6</th>
+                    <td><div class="btn btn-sm btn-danger"><input type="checkbox"> wh6001</div></td>
+                    <td><div class="btn btn-sm btn-danger"><input type="checkbox"> wh6002</div></td>
+                    <td><div class="btn btn-sm btn-danger"><input type="checkbox"> wh6003</div></td>
+                    <td><div class="btn btn-sm btn-danger"><input type="checkbox"> wh6004</div></td>
+                    <td><div class="btn btn-sm btn-success"><input type="checkbox"> wh6005</div></td>
+                    <td><div class="btn btn-sm btn-warning"><input type="checkbox"> wh6006</div></td>
+                    <td><div class="btn btn-sm btn-success"><input type="checkbox"> wh6007</div></td>
+                    <td><div class="btn btn-sm btn-warning"><input type="checkbox"> wh6008</div></td>
+                    <td><div class="btn btn-sm btn-success"><input type="checkbox"> wh6009</div></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">WH 7</th>
+                    <td><div class="btn btn-sm btn-success"><input type="checkbox"> wh7001</div></td>
+                    <td><div class="btn btn-sm btn-success"><input type="checkbox"> wh7002</div></td>
+                    <td><div class="btn btn-sm btn-danger"><input type="checkbox"> wh7003</div></td>
+                    <td><div class="btn btn-sm btn-danger"><input type="checkbox"> wh7004</div></td>
+                    <td><div class="btn btn-sm btn-danger"><input type="checkbox"> wh7005</div></td>
+                    <td><div class="btn btn-sm btn-success"><input type="checkbox"> wh7006</div></td>
+                    <td><div class="btn btn-sm btn-success"><input type="checkbox"> wh7007</div></td>
+                    <td><div class="btn btn-sm btn-warning"><input type="checkbox"> wh7008</div></td>
+                    <td><div class="btn btn-sm btn-success"><input type="checkbox"> wh7009</div></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        </nav>
+    
+
+         <!-- Modal -->
+         <div class="modal fade" id="select-racking" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body" style="width: 500px;">
+                Supplier Name : <label style="color: green;">PT. Hondakujaisoo</label>
+                <p> QTY : 50 Item</p>
+                <hr>
+                <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">P.Code</th>
+                        <th scope="col">P.Name</th>
+                        <th scope="col">Bacth</th>
+                        <th scope="col">Location</th>
+                        <th scope="col">Qty</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>F001</td>
+                        <td>Container Kemas tangki</td>
+                        <td>Wh1-001ac</td>
+                        <td>wh1001</td>
+                        <td>5</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>F001</td>
+                        <td>Tangga Aluminuim</td>
+                        <td>Wh1-001ab</td>
+                        <td>wh1001</td>
+                        <td>100</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>F002</td>
+                        <td>Pallet Besi</td>
+                        <td>Wh1-001an</td>
+                        <td>wh1001</td>
+                        <td>73</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>F002</td>
+                        <td>Container Kemas Pendingin</td>
+                        <td>Wh1-001am</td>
+                        <td>wh1001</td>
+                        <td>7</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td>F001</td>
+                        <td>Hand Pallet</td>
+                        <td>Wh1-001al</td>
+                        <td>wh1001</td>
+                        <td>28</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="modal-footer">
+                    <a href="racking.html"><button type="button" class="btn btn-outline-danger">Kembali</button></a>
+                </div>
+            </div>
+            <!-- End Modal -->
+
+</div> <!-- ini div punya main -->
+
+<style>
+    /* The switch - the box around the slider */
+</style>
+
+    <!-- padding: 10px;
+    border: 1px dashed grey;
+} -->
+</style>
+
+     <!-- SCRIPTS JS -->
+     <script src="../assets/js/main.js "></script>
+
+     <!-- IONICONS JS -->
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+ 
+     <!-- Bootsrap JS -->
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     
+     
+ </body>
+ </html>

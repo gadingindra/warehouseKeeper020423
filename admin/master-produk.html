@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- Bootsrap 4.0 -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <title>Warehouse - TIO</title>
+    <link rel="icon" href="../assets/img/favicon.ico">
+
+    <!-- STYLE FILES -->
+    <link rel="stylesheet" href="../assets/css/home.css">
+    
+</head>
+<body>
+
+    <!-- --------------- Navbar ---------------  -->
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="">
+                    <span class="icon">
+                        <ion-icon name="logo-google"></ion-icon>
+                    </span>
+                    <span class="title">Warehouse - TIO</span>
+                </a>
+            </li>
+            <li>
+                <a href="home.html">
+                    <span class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="title">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="master-data.html">
+                    <span class="icon">
+                        <ion-icon name="analytics-outline"></ion-icon>
+                    </span>
+                    <span class="title">Master Data</span>
+                </a>
+            </li>
+            <li>
+                <a href="master-produk.html">
+                    <span class="icon">
+                        <ion-icon name="server-outline"></ion-icon>
+                    </span>
+                    <span class="title">Master Product</span>
+                </a>
+            </li>
+            <li>
+                <a href="reciving.html">
+                    <span class="icon">
+                        <ion-icon name="walk-outline"></ion-icon>
+                    </span>
+                    <span class="title">Receiving</span>
+                </a>
+            </li>
+            <li> 
+                <a href="movement.html">
+                    <span class="icon">
+                        <ion-icon name="swap-horizontal-outline"></ion-icon>
+                    </span>
+                    <span class="title">Movement</span>
+                </a>
+            </li>
+            <li> 
+                <a href="racking.html">
+                    <span class="icon">
+                        <ion-icon name="warning-outline"></ion-icon>
+                    </span>
+                    <span class="title">Racking</span>
+                </a>
+            </li>
+            <li> 
+                <a href="payment.html">
+                    <span class="icon">
+                        <ion-icon name="cash-outline"></ion-icon>
+                    </span>
+                    <span class="title">Payment</span>
+                </a>
+            </li>
+            <li> 
+                <a href="../index.html">
+                    <span class="icon">
+                        <ion-icon name="log-out-outline"></ion-icon>
+                    </span>
+                    <span class="title">Sign out</span>
+                </a>
+            </li>
+        </ul>
+    </div> 
+
+<!-- ------------- MAIN ------------- -->
+
+<div class="main">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="topbar">
+        <div class="toggle">
+            <ion-icon name="menu-outline"></ion-icon>
+        </div>
+        
+        <div class="container-fluid">
+            <label style="margin-left: 620px; margin-top: 20px; font-family: geneva;">alfirassmanar11@gmail.company.co.id</label>
+            <p style="margin-left: 767px; margin-top: -12px; font-size: 10pt;">Daily Worker-TIO</p>
+         </div>
+
+        <div class="dropdown">
+            <div class="user dropdown-toggle" id="dropdownimg" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="../assets/img/firas.jpg" alt="">
+            </div>
+            <div class="dropdown-menu bg-transparent" aria-labelledby="dropdownimg" style="margin-left: -146px; margin-top: 9px; transition: 0.5s; overflow: hidden;">
+              <a class="dropdown-item" href="#">Profile</a>
+              <a class="dropdown-item" href="../index.html">Logout</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- ------------- Body Bootstrap ------------- -->
+
+    <div class="container" style="margin-top: 20px;">
+        <nav class="navbar" style="background-color: #FFFCFC; height: 100px; box-shadow: 2px 2px 2px rgba(0,0,0,0.2);">
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <!-- Dropdown -->
+            <div class="form-group" style="width: 240px;">
+                <label for="exampleFormControlSelect1" style="font-family: Geneva;">Select Area</label>            
+                <select class="form-control" id="exampleFormControlSelect1" aria-labelledby="dropdownMenuButton">
+                  <option></option>
+                  <option class="dropdown-item" href="#">heavy equipment</option>
+                  <option class="dropdown-item" href="#">supporting items</option>
+                  <option class="dropdown-item" href="#">Packaging items</option>
+                  <option class="dropdown-item" href="#">equipment maintenance</option>
+                </select>
+              </div>
+              <div class="btn btn-sm btn-outline-primary" style="margin-top: -50px;" type="button" data-toggle="modal" data-target="#tambah-barang">tambah data</div>
+
+               <!-- Modal -->
+               <div class="modal fade" id="tambah-barang" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                    <p style="font-size: 15pt; font-family: geneva;">Form Tambah Data*</p>
+                    <div>Item Code : <input class="form-control-static" style="margin-left: 4px;" type="text"></div>
+                    <div style="margin-top: 10px;">Nama Item : <input class="form-control-static" type="text"></div>
+                    <div style="margin-top: 10px;">Uom : <input class="form-control-static" style="margin-left: 43px;" type="text"></div>
+                    <hr>
+                    Inbound Date : <input class="form-control" type="datetime-local">
+                    </div>
+
+                     <form style="margin-left: 20px;">
+                        <div class="form-group">
+                          <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        </div>
+                      </form>
+
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-success">Submit</button>
+                    <a href="master-produk.html"><button type="button" class="btn btn-outline-danger">Kembali</button></a>
+                    </div>
+                </div>
+                <!-- End Modal -->
+
+              <!-- End Dropdown -->
+          </nav>
+    </div>
+
+    <div class="container" style="margin-top: 30px;">
+        <nav class="navbar" style="background-color: #FFFCFC; height: 450px; box-shadow: 2px 2px 2px rgba(0,0,0,0.2);">
+            <label for="exampleFormControlSelect1" style="font-family: Geneva;">show 
+                <label style="color: green;">
+                    <div class="dropdown show">
+                        <div class="form-control dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          10
+                        </div>
+                      
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="#">10</a>
+                          <a class="dropdown-item" href="#">25</a>
+                          <a class="dropdown-item" href="#">50</a>
+                          <a class="dropdown-item" href="#">100</a>
+                        </div>
+                      </div>
+                </label> 
+                <label>entries</label>
+            </label>
+
+            <!-- Toggle Swift -->
+            <label for="exampleFormControlSelect1" style="font-family: Geneva; margin-left: 430px; color: gray;">Search : 
+               <input class="form-control-static" type="text">
+            </label>
+            <!-- End Toggle Swift -->
+
+            
+            <!-- tables -->
+           <table class="table table-striped" style="margin-top: 20px;">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Product Code</th>
+                <th scope="col">Product Name</th>
+                <th scope="col">Uom</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>1</th>
+                <td>F001</td>
+                <td>Container kemas tangki <label style="color: orange; font-family: geneva;">- heavy equipment</label> </td>
+                <td>Container</td>
+                <td>
+                    <div class="btn btn-sm btn-outline-success" type="button" data-toggle="modal" data-target="#overseas-container">edit</div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="overseas-container" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                            <p style="font-size: 15pt; font-family: geneva;">Form Ubah Data*</p>
+                            <div>Item Code : <input class="form-control-static" style="margin-left: 4px;" type="text"></div>
+                            <div style="margin-top: 10px;">Nama Item : <input class="form-control-static" type="text"></div>
+                            <div style="margin-top: 10px;">Uom : <input class="form-control-static" style="margin-left: 43px;" type="text"></div>
+                            <hr>
+                            Inbound Date : <input class="form-control" type="datetime-local" disabled>
+                            </div>
+
+                            <img src="../assets/img/container-kemas-tangki.jpg" alt="..." class="img-thumbnail">
+
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-success">Submit</button>
+                            <a href="master-produk.html"><button type="button" class="btn btn-outline-danger">Kembali</button></a>
+                            </div>
+                        </div>
+                        <!-- End Modal -->
+                        </div>
+                    </div>
+                    <div class="btn btn-sm btn-outline-primary "type="button" data-toggle="modal" data-target="#domestic-container">hapus</div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="domestic-container" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                            Supplier Name : <label style="color: green;">PT. Surya Kencana Abadi</label>
+                            <p> QTY : 30 Item</p>
+                            <hr>
+                            Inbound Date : <input class="form-control" type="datetime-local" disabled>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-danger">Kembali</button>
+                            </div>
+                        </div>
+                        <!-- End Modal -->
+                </td>
+              </tr>
+              <tr>
+                <th>2</th>
+                <td>F002</td>
+                <td>Tangga Aluminum <label style="color: orange; font-family: geneva;">- supporting items</label> </td>
+                <td>Item</td>
+                <td>
+                    <div class="btn btn-sm btn-outline-success" type="button" data-toggle="modal" data-target="#nomor-2">edit</div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="nomor-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                            <p style="font-size: 15pt; font-family: geneva;">Form Ubah Data*</p>
+                            <div>Item Code : <input class="form-control-static" style="margin-left: 4px;" type="text"></div>
+                            <div style="margin-top: 10px;">Nama Item : <input class="form-control-static" type="text"></div>
+                            <div style="margin-top: 10px;">Uom : <input class="form-control-static" style="margin-left: 43px;" type="text"></div>
+                            <hr>
+                            Inbound Date : <input class="form-control" type="datetime-local" disabled>
+                            </div>
+
+                            <img src="../assets/img/tangga-aluminium-pesawat.jpg" alt="..." class="img-thumbnail">
+
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-success">Submit</button>
+                            <a href="master-produk.html"><button type="button" class="btn btn-outline-danger">Kembali</button></a>
+                            </div>
+                        </div>
+                        <!-- End Modal -->
+                        </div>
+                    </div>
+                    <div class="btn btn-sm btn-outline-primary "type="button" data-toggle="modal" data-target="#nomor-2">hapus</div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="nomor-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                            Supplier Name : <label style="color: green;">PT. Surya Kencana Abadi</label>
+                            <p> QTY : 30 Item</p>
+                            <hr>
+                            Inbound Date : <input class="form-control" type="datetime-local" disabled>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-danger">Kembali</button>
+                            </div>
+                        </div>
+                        <!-- End Modal -->
+                </td>
+              </tr>
+              <tr>
+                <th>3</th>
+                <td>F003</td>
+                <td>Pallet Besi <label style="color: orange; font-family: geneva;">- Packaging Items</label> </td>
+                <td>Item</td>
+                <td>
+                    <div class="btn btn-sm btn-outline-success" type="button" data-toggle="modal" data-target="#nomor-3">edit</div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="nomor-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                            <p style="font-size: 15pt; font-family: geneva;">Form Ubah Data*</p>
+                            <div>Item Code : <input class="form-control-static" style="margin-left: 4px;" type="text"></div>
+                            <div style="margin-top: 10px;">Nama Item : <input class="form-control-static" type="text"></div>
+                            <div style="margin-top: 10px;">Uom : <input class="form-control-static" style="margin-left: 43px;" type="text"></div>
+                            <hr>
+                            Inbound Date : <input class="form-control" type="datetime-local">
+                            </div>
+
+                            <img src="../assets/img/pallet-besi.jpg" alt="..." class="img-thumbnail">
+
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-success">Submit</button>
+                            <a href="master-produk.html"><button type="button" class="btn btn-outline-danger">Kembali</button></a>
+                            </div>
+                        </div>
+                        <!-- End Modal -->
+                    </div>
+                </div>
+                    <div class="btn btn-sm btn-outline-primary "type="button" data-toggle="modal" data-target="#nomor-4">hapus</div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="nomor-4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                            Supplier Name : <label style="color: green;">PT. Surya Kencana Abadi</label>
+                            <p> QTY : 30 Item</p>
+                            <hr>
+                            Inbound Date : <input class="form-control" type="datetime-local" disabled>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-danger">Kembali</button>
+                            </div>
+                        </div>
+                        <!-- End Modal -->
+                </td>
+              </tr>
+              <tr>
+                <th>4</th>
+                <td>F004</td>
+                <td>Container kemas berpendingin <label style="color: orange; font-family: geneva;">- heavy equipment</label> </td>
+                <td>Container</td>
+                <td>
+                    <div class="btn btn-sm btn-outline-success" type="button" data-toggle="modal" data-target="#nomor-5">edit</div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="nomor-5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                            <p style="font-size: 15pt; font-family: geneva;">Form Ubah Data*</p>
+                            <div>Item Code : <input class="form-control-static" style="margin-left: 4px;" type="text"></div>
+                            <div style="margin-top: 10px;">Nama Item : <input class="form-control-static" type="text"></div>
+                            <div style="margin-top: 10px;">Uom : <input class="form-control-static" style="margin-left: 43px;" type="text"></div>
+                            <hr>
+                            Inbound Date : <input class="form-control" type="datetime-local" disabled>
+                            </div>
+
+                            <img src="../assets/img/container-kemas-pendingin.jpg" alt="..." class="img-thumbnail">
+
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-success">Submit</button>
+                            <a href="master-produk.html"><button type="button" class="btn btn-outline-danger">Kembali</button></a>
+                            </div>
+                        </div>
+
+
+                        <!-- End Modal -->
+                        </div>
+                    </div>
+                    <div class="btn btn-sm btn-outline-primary "type="button" data-toggle="modal" data-target="#domestic-container">Hapus</div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="domestic-container" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                            Supplier Name : <label style="color: green;">PT. Surya Kencana Abadi</label>
+                            <p> QTY : 30 Item</p>
+                            <hr>
+                            Inbound Date : <input class="form-control" type="datetime-local" disabled>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-danger">Kembali</button>
+                            </div>
+                        </div>
+                        <!-- End Modal -->
+                </td>
+              </tr>
+            </tbody>
+        </table>
+        <!-- end tables -->
+          <!-- Pagination -->
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-end">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Previous</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- End Pagination -->
+          
+          <!-- <div class="btn btn-success">Submit</div> -->
+          </nav>
+    </div>
+    
+
+</div> <!-- ini div punya main -->
+
+<style>
+    /* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 30px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #1fbb27;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.container .navbar table tbody tr:hover {
+	background: #caf0f8;
+}
+</style>
+
+    <!-- padding: 10px;
+    border: 1px dashed grey;
+} -->
+</style>
+
+     <!-- SCRIPTS JS -->
+     <script src="../assets/js/main.js "></script>
+
+     <!-- IONICONS JS -->
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+ 
+     <!-- Bootsrap JS -->
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     
+     
+ </body>
+ </html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="../assets/img/favicon.ico">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- Bootsrap 4.0 -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <title>Warehouse - TIO</title>
+    
+    <!-- STYLE FILES -->
+    <link rel="stylesheet" href="../assets/css/home.css">
+    
+</head>
+<body>
+
+    <!-- --------------- Navbar ---------------  -->
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="">
+                    <span class="icon">
+                        <ion-icon name="logo-google"></ion-icon>
+                    </span>
+                    <span class="title">Warehouse - TIO</span>
+                </a>
+            </li>
+            <li>
+                <a href="home.html">
+                    <span class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="title">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="master-data.html">
+                    <span class="icon">
+                        <ion-icon name="analytics-outline"></ion-icon>
+                    </span>
+                    <span class="title">Master Data</span>
+                </a>
+            </li>
+            <li>
+                <a href="master-produk.html">
+                    <span class="icon">
+                        <ion-icon name="server-outline"></ion-icon>
+                    </span>
+                    <span class="title">Master Product</span>
+                </a>
+            </li>
+            <li>
+                <a href="reciving.html">
+                    <span class="icon">
+                        <ion-icon name="walk-outline"></ion-icon>
+                    </span>
+                    <span class="title">Receiving</span>
+                </a>
+            </li>
+            <li> 
+                <a href="movement.html">
+                    <span class="icon">
+                        <ion-icon name="swap-horizontal-outline"></ion-icon>
+                    </span>
+                    <span class="title">Movement</span>
+                </a>
+            </li>
+            <li> 
+                <a href="racking.html">
+                    <span class="icon">
+                        <ion-icon name="warning-outline"></ion-icon>
+                    </span>
+                    <span class="title">Racking</span>
+                </a>
+            </li>
+            <li> 
+                <a href="payment.html">
+                    <span class="icon">
+                        <ion-icon name="cash-outline"></ion-icon>
+                    </span>
+                    <span class="title">Payment</span>
+                </a>
+            </li>
+            <li> 
+                <a href="../index.html">
+                    <span class="icon">
+                        <ion-icon name="log-out-outline"></ion-icon>
+                    </span>
+                    <span class="title">Sign out</span>
+                </a>
+            </li>
+        </ul>
+    </div> 
+
+<!-- ------------- MAIN ------------- -->
+
+<div class="main">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="topbar">
+        <div class="toggle">
+            <ion-icon name="menu-outline"></ion-icon>
+        </div>
+        
+        <div class="container-fluid">
+            <label style="margin-left: 620px; margin-top: 20px; font-family: geneva;">alfirassmanar11@gmail.company.co.id</label>
+            <p style="margin-left: 767px; margin-top: -12px; font-size: 10pt;">Daily Worker-TIO</p>
+         </div>
+
+        <div class="dropdown">
+            <div class="user dropdown-toggle" id="dropdownimg" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="../assets/img/firas.jpg" alt="">
+            </div>
+            <div class="dropdown-menu bg-transparent" aria-labelledby="dropdownimg" style="margin-left: -146px; margin-top: 9px; transition: 0.5s; overflow: hidden;">
+              <a class="dropdown-item" href="#">Profile</a>
+              <a class="dropdown-item" href="../index.html">Logout</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- ------------- Body Bootstrap ------------- -->
+
+    <div class="container" style="margin-top: 20px;">
+        <nav class="navbar" style="background-color: #FFFCFC; height: 100px; box-shadow: 2px 2px 2px rgba(0,0,0,0.2);">
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <!-- Dropdown -->
+            <div class="form-group" style="width: 240px;">
+                <label for="exampleFormControlSelect1" style="font-family: Geneva;">Select Area</label>
+                <select class="form-control" id="exampleFormControlSelect1" aria-labelledby="dropdownMenuButton">
+                  <option></option>
+                  <option class="dropdown-item" href="#">heavy equipment</option>
+                  <option class="dropdown-item" href="#">supporting items</option>
+                  <option class="dropdown-item" href="#">Packaging items</option>
+                  <option class="dropdown-item" href="#">equipment maintenance</option>
+                </select>
+              </div>
+              <!-- End Dropdown -->
+          </nav>
+    </div>
+
+    <div class="container" style="margin-top: 30px;">
+        <nav class="navbar" style="background-color: #FFFCFC; height: 450px; box-shadow: 2px 2px 2px rgba(0,0,0,0.2);">
+            <label for="exampleFormControlSelect1" style="font-family: Geneva;">Enter SKU or Description <label style="color: green;">(0 Selected SKU)</label></label>
+
+            <!-- Toggle Swift -->
+            <label for="exampleFormControlSelect1" style="font-family: Geneva; margin-left: 430px; color: gray;">Hanya Menampilkan SKU 0</label>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <!-- End Toggle Swift -->
+
+            <form class="form-control">
+                <div class="row">
+                    <div class="col">
+                        <button type="text" class="btn btn-sm btn-success" style=" margin-left: 860px; width: 100px; height: 50px;">Search</button>
+                        <!-- <div class="btn btn-success" style="margin-left: 890px; margin-top: -77px; font-size: 17pt; font-family: 'Times New Roman', Times, serif;">SEARCH</div> -->
+                    </div>
+                </div>
+            </form>
+            
+            <!-- tables -->
+           <table class="table table-striped" style="margin-top: 20px;">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Kategori</th>
+                <th scope="col">Qty</th>
+                <th scope="col">Confirm Date Qty</th>
+                <th scope="col">Supplier Name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"><input type="checkbox"></th>
+                <td>Container</td>
+                <td>80 <label style="color: orange; font-family: geneva;">Item</label> </td>
+                <td><input class="form-control" type="datetime-local" disabled></td>
+                <td>
+                    <div class="btn btn-sm btn-outline-warning" type="button" data-toggle="modal" data-target="#overseas-container">overseas</div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="overseas-container" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                            Supplier Name : <label style="color: green;">PT. Hondakujaisoo</label>
+                            <p> QTY : 50 Item</p>
+                            <hr>
+                            Inbound Date : <input class="form-control" type="datetime-local" disabled>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="master-data.html"><button type="button" class="btn btn-outline-danger">Kembali</button></a>
+                            </div>
+                        </div>
+                        <!-- End Modal -->
+                        </div>
+                    </div>
+                    <div class="btn btn-sm btn-outline-primary "type="button" data-toggle="modal" data-target="#domestic-container">domestic</div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="domestic-container" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                            Supplier Name : <label style="color: green;">PT. Surya Kencana Abadi</label>
+                            <p> QTY : 30 Item</p>
+                            <hr>
+                            Inbound Date : <input class="form-control" type="datetime-local" disabled>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="master-data.html"><button type="button" class="btn btn-outline-danger">Kembali</button></a>
+                            </div>
+                        </div>
+                        <!-- End Modal -->
+                </td>
+              </tr>
+              <tr>
+                <th scope="row"><input type="checkbox"></th>
+                <td>Hand Pallet</td>
+                <td>50 <label style="color: orange; font-family: geneva;">Item</label> </td>
+                <td><input class="form-control" type="datetime-local" disabled></td>
+                <td>
+                    <div class="btn btn-sm btn-outline-warning">overseas</div>
+                    <div class="btn btn-sm btn-outline-primary">domestic</div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row"><input type="checkbox"></th>
+                <td>Iron Pallet</td>
+                <td>42 <label style="color: orange; font-family: geneva;">Item</label> </td>
+                <td><input class="form-control" type="datetime-local" disabled></td>
+                <td>
+                    <div class="btn btn-sm btn-outline-warning">overseas</div>
+                    <div class="btn btn-sm btn-outline-primary">domestic</div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row"><input type="checkbox"></th>
+                <td>Rak Duty</td>
+                <td>15 <label style="color: orange; font-family: geneva;">Item</label> </td>
+                <td><input class="form-control" type="datetime-local" disabled></td>
+                <td>
+                    <div class="btn btn-sm btn-outline-warning">overseas</div>
+                    <div class="btn btn-sm btn-outline-primary">domestic</div>
+                </td>
+              </tr>
+            </tbody>
+        </table>
+        <!-- end tables -->
+          <!-- Pagination -->
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-end">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Previous</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- End Pagination -->
+
+          <!-- <div class="btn btn-success">Submit</div> -->
+          </nav>
+    </div>
+    
+
+</div> <!-- ini div punya main -->
+
+<style>
+    /* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 30px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #1fbb27;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.container .navbar table tbody tr:hover {
+	background: #caf0f8;
+}
+</style>
+
+    <!-- padding: 10px;
+    border: 1px dashed grey;
+} -->
+</style>
+
+     <!-- SCRIPTS JS -->
+     <script src="../assets/js/main.js "></script>
+
+     <!-- IONICONS JS -->
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+ 
+     <!-- Bootsrap JS -->
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     
+     
+ </body>
+ </html>
